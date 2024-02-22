@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -14,7 +14,7 @@ export class AppComponent {
   title = 'todoapp_2024';
   taskForm = new FormGroup(
     {
-      taskName: new formControl('')
+      taskName: new FormControl('')
     }
   )
 }
